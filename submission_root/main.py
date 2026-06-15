@@ -1,4 +1,3 @@
-# Import functions from task_manager.task_utils package
 from task_manager.task_utils import (
     add_task,
     mark_task_as_complete,
@@ -27,7 +26,6 @@ def main():
             if not tasks:
                 print("No tasks available. Please add a task first.")
                 continue
-            # Show pending tasks with indices for selection
             pending = [t for t in tasks if not t["completed"]]
             if not pending:
                 print("All tasks are already completed!")
